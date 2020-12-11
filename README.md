@@ -17,46 +17,70 @@ The aim of our study in this project is to reduce the bank’s investment of res
 2. DATASET
 
 The dataset used in this project is related to telemarketing campaigns of a Portuguese Bank Institution, University of California, Irvine (UCI). It is located in the machine learning repository of UCI at URL: https://archive.ics.uci.edu/ml/datasets/Bank+Marketing . The link contains four datasets from which we are using 2 datasets namely bank-additional-full.csv with all observations (20 inputs) and bank-additional.csv with 10% of full data (20 inputs). It contains examples from May 2008 to November 2010. The marketing campaign was based on calls and in order to know if the term deposit would be subscribed or not, same customer was contacted more than once.
+
 As mentioned earlier the data set contains 20 input variables including client’s personal data like age, job, marital status, loan background etc., contact details like duration, last contacted details and social & economic attributes. The 21st variable will be the binary outcome variable ‘y’ which determines whether the customer subscribed to term deposit or not with 2 possible values ‘yes’, ’no’. The classification goal here is to predict if the client will buy the term deposit.
 
 3. DATA EXPLORATION
 
 To build any data model it is very important to first understand the data completely to maximum extent. The obtained data which is imported into SAS enterprise Miner has to be explored to get insights about what kind of data we have and what else is missing from the data since efficient models cannot be built from weak data.
+
 A statistical examination of data gives us a clear picture about the dataset in our study, which would be helpful for our further analysis. To do the same, a descriptive statistic is drawn on the dataset using nodes like StatExplore, Multiplot which are available from the explore tab on the Toolbar of SAS enterprise Miner. Descriptive statistics are very useful in studying the important and basic patterns of data of our interest. They provide simple summaries about each of the variables which resides in the dataset. Along with descriptive statistics, charts for every variable are also plotted which helps an individual to visually observe possible patterns. Rather than presenting the statistics in numbers, graphs allow easy interpretation of facts about data, especially if the data is very large. We shall start finding insights about each of the variables in the dataset.
  
 3.1.1 INTERVAL VARIABLES
 
 We have 9 interval variables in the dataset. None of them have missing values, hence no imputation of values is required. The histograms and bar plots by target variable ‘y’ for all variables is provided in the Appendix section from Figure 1 to Figure 19. All the interval variables of bank dataset are as explained below:
+
 • age: It indicates age of the client. It seems that age does not have much impact on the target variable ’y’ since the variance between the two responses of ‘y’ for age is very less.
+
 Figure 1 in appendix represents the variable age.
 • Campaign: It indicates number of contacts performed for this campaign for a client. The value ranges from minimum of 1 to maximum of 56. Figure 2 in appendix represents the variable campaign and it seen that the distribution is skewed. For further analysis we may have to consider this variable for transformation.
+
 • pdays: It indicates the number of days after the client was contacted for the last time from previous campaign. The values range from 0 to 27 days and also it has value ‘999’ which indicates that the customer was not contacted at all. Around 96% of the examples say that the client was not contacted. This data makes no sense to training the model since we are required to train a model with data where the customer was contacted and corresponding observations are taken into consideration. Hence, going further we have to either ignore the observations where pdays=999 or we can replace them with mean/median of variable. Let us select the second option for this study where pdays=999 are replaced and imputed with median of pdays = 6. Figure 17 in appendix represents the plots for this variable.
+
 • cons.conf.idx: It is a monthly indicator which determines consumer confidence index. The value ranges from minimum of -50.8 to -26.9. It explains about the country’s current and future economic situation each month. Figure 3 in appendix section represents the consumer confidence index. The data does not seem to have even spread throughout the histogram.
+
 • cons.price.idx: It is a monthly indictor which determines consumer price index. The value ranges in decimal points from 92 to 95. It explains the changes in prices paid by consumers for goods and services each month. Figure 4 in appendix section represents the consumer price index. The data does not seem to have even spread throughout the histogram.
+
 • emp.var.rate: It is a quarterly indicator which determines employment variation rate in the country. The value ranges from -3.4 to 1.4. Figure 5 in appendix section represents employment variation rate in country.
+
 • euribor3m: It is a daily indicator which determines the average interest with which the all European banks borrow from each other that mature after 3 months. Figure 6 represents the Euribor Interbank offered rate. The value varies from 0.63 to 5.04.
+
 • nr.employed: It indicates the number of persons employed and is a quarterly indicator. The values vary from 4963 to 5228 and the histogram in figure 7 of appendix represent the number of persons employed.
+
 • previous: Indicates the number of contacts performed before the current campaign and for a particular client. The value ranges from 0 to 7. Figure 19 in appendix shows the histogram and the distribution w.r.t target variable y. From histogram, we can see that the variables values are highly skewed and can be considered for transformation of variable.
+
 • duration: The duration variable has been rejected in this analysis because if duration=’0’ then y=’no’ which means that we will not know the duration of call without calling the customer and this variable highly effects the target variable ‘y’.
 
 3.1.2 NOMINAL VARIABLES
 
 We have 10 nominal variables in our dataset and there are no missing categorical values and thus no imputation is needed. A review of all the nominal variables plot reveals the following observations.
+
 • contact: The variable indicates the communication type of the campaign for a particular client. It has 2 possible values “cellular” and “telephone”. Around 63% of clients were contacted through “cellular” and around 37% of clients were contacted through “telephone”. The clients who were contacted through cell phone had more “yes” responses than who were contacted through telephone. Figure 5 in appendix represents the contact variable.
+
 • day_of_week: The variable tells the last weekday when the client was contacted. The possible values are 5 weekdays from “monday” to “friday”. The figure 6 in appendix says that the variable did not vary much with respect to target variable ‘y’. It seems that most of the clients were contacted on “mondays” and “thursdays”.
+
 • default: Indicates whether a client has a credit card provided by bank or not. The possible values are “yes”,”no” and “uknown”. From the graph in figure 7 of appendix it seems that most of the clients who didn’t have a credit card subscribed for term deposit.
+
 • education: The categorical variable indicates the educational qualification of the client. It had 8 possible educational qualifications and it is found from the graph that the parameter did not affect the response variable ‘y’. Figure 8 in appendix reflects the same.
+
 • housing: Indicates whether the client already has a house loan borrowed from bank. Includes 3 possible values with “yes”,”no” and “unknown”. Figure 11 in appendix shows that there was slight difference in clients having house loan and not having house loan, getting subscribed for term deposit.
+
 • job: Indicates the type of job that a client is employed with. The bank had more clients who were working in admin and blue-collar jobs and its likely to see that they were the ones with more “yes” response for term deposit. Same has been plotted in figure 12.
+
 • loan: The variable determines whether the client already has personal loan borrowed from the bank. The possible values being “yes”,”no” and “unknown”, customers who do not have prior personal loans in bank seems to buy the term deposits than the customers who already have personal loan.
+
 • month: Indicates the last contact month of the year. Values ranging from Jan to Dec. Figure 14 explains the distribution of month.
+
 • marital: Determines the marital status of bank clients. The bank has got more customers who are married and figure 16 demonstrates the same, it is obvious that more “yes” responses are from customers whose status is married.
+
 • poutcome: It is the outcome variable of previous campaign. The possible values include “success”,”failure” and “non-existent”. Figure 18 in appendix shows the distribution of outcome of previous campaign.
+
 • y: In the given dataset, it is observed that the target response ‘y’ has around 89% of “yes” responses and around 11% of “no” responses. The same has been plotted in figure 20 of appendix section. This should be taken into consideration while modelling since a biased dataset can lead to create a biased data model. We will further explore the relationships and summary statistics of each of the variables in the dataset using SAS enterprise miner.
 
 •
 1.
 Using the StatExplore node the following observations were done:
 Chi-Square Plot
- 2.
+
+2.
 A Chi-square statistic gives us the relationship between each of the variables and the target variable. The Chi-square statistic is very similar to the co-efficient of determination, R-squared value. It the measure of how much a variable can explain the variance in target variable. Since our target variable is categorical Chi-square statistic would be the best way of assessing variable relationships. Reviewing the above plot, we can select variables for our data models and thus do feature selection. From the graph it is evident that nr.employment variable has the highest Chi-square statistic followed by other variables like cons.conf.idx, emp.var.rate, pdays, poutcome, euribor3m, month and so on.
