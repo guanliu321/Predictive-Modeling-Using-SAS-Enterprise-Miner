@@ -10,16 +10,22 @@ This project is to build a model in a dataset of more than 41,000 records to pre
 #Utilized:SAS Enterprise Miner,Decision tree, Logistic Regression, Random Forest, Support Vector Machines, Neural Networks,AUC,Misclassification Rate,Chi-square Test
 
 1. INTRODUCTION
+
 Marketing selling campaigns in enterprises are a form of organising marketing activities of product/services. By carrying out campaigns, it can drive more profit to the company that otherwise may not happen. Banking sector is one of the industries which uses such campaigning activities to provide monetary services to people and make profit. To do this, the banks engage in direct marketing by investing a lot of money and infra structure to gain capital. One way of direct marketing in selling is to contact the customers through phone. A call centre allows the bank to communicate with clients from different places.
 The aim of our study in this project is to reduce the bank’s investment of resources towards marketing by predicting the right number of customers to approach for subscribing to a new bank product like term deposits. Here we are using a Portuguese bank market campaign dataset who sell term deposits. The project should be able to select the best of clients so that instead of spending on approaching all the customers, the bank can aim selected customers who are more likely to subscribe for the term deposits.
+
 2. DATASET
+
 The dataset used in this project is related to telemarketing campaigns of a Portuguese Bank Institution, University of California, Irvine (UCI). It is located in the machine learning repository of UCI at URL: https://archive.ics.uci.edu/ml/datasets/Bank+Marketing . The link contains four datasets from which we are using 2 datasets namely bank-additional-full.csv with all observations (20 inputs) and bank-additional.csv with 10% of full data (20 inputs). It contains examples from May 2008 to November 2010. The marketing campaign was based on calls and in order to know if the term deposit would be subscribed or not, same customer was contacted more than once.
 As mentioned earlier the data set contains 20 input variables including client’s personal data like age, job, marital status, loan background etc., contact details like duration, last contacted details and social & economic attributes. The 21st variable will be the binary outcome variable ‘y’ which determines whether the customer subscribed to term deposit or not with 2 possible values ‘yes’, ’no’. The classification goal here is to predict if the client will buy the term deposit.
+
 3. DATA EXPLORATION
+
 To build any data model it is very important to first understand the data completely to maximum extent. The obtained data which is imported into SAS enterprise Miner has to be explored to get insights about what kind of data we have and what else is missing from the data since efficient models cannot be built from weak data.
 A statistical examination of data gives us a clear picture about the dataset in our study, which would be helpful for our further analysis. To do the same, a descriptive statistic is drawn on the dataset using nodes like StatExplore, Multiplot which are available from the explore tab on the Toolbar of SAS enterprise Miner. Descriptive statistics are very useful in studying the important and basic patterns of data of our interest. They provide simple summaries about each of the variables which resides in the dataset. Along with descriptive statistics, charts for every variable are also plotted which helps an individual to visually observe possible patterns. Rather than presenting the statistics in numbers, graphs allow easy interpretation of facts about data, especially if the data is very large. We shall start finding insights about each of the variables in the dataset.
  
 3.1.1 INTERVAL VARIABLES
+
 We have 9 interval variables in the dataset. None of them have missing values, hence no imputation of values is required. The histograms and bar plots by target variable ‘y’ for all variables is provided in the Appendix section from Figure 1 to Figure 19. All the interval variables of bank dataset are as explained below:
 • age: It indicates age of the client. It seems that age does not have much impact on the target variable ’y’ since the variance between the two responses of ‘y’ for age is very less.
 Figure 1 in appendix represents the variable age.
@@ -34,6 +40,7 @@ Figure 1 in appendix represents the variable age.
 • duration: The duration variable has been rejected in this analysis because if duration=’0’ then y=’no’ which means that we will not know the duration of call without calling the customer and this variable highly effects the target variable ‘y’.
 
 3.1.2 NOMINAL VARIABLES
+
 We have 10 nominal variables in our dataset and there are no missing categorical values and thus no imputation is needed. A review of all the nominal variables plot reveals the following observations.
 • contact: The variable indicates the communication type of the campaign for a particular client. It has 2 possible values “cellular” and “telephone”. Around 63% of clients were contacted through “cellular” and around 37% of clients were contacted through “telephone”. The clients who were contacted through cell phone had more “yes” responses than who were contacted through telephone. Figure 5 in appendix represents the contact variable.
 • day_of_week: The variable tells the last weekday when the client was contacted. The possible values are 5 weekdays from “monday” to “friday”. The figure 6 in appendix says that the variable did not vary much with respect to target variable ‘y’. It seems that most of the clients were contacted on “mondays” and “thursdays”.
