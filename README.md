@@ -85,6 +85,7 @@ Using the StatExplore node the following observations were done:
 A Chi-square statistic gives us the relationship between each of the variables and the target variable. The Chi-square statistic is very similar to the co-efficient of determination, R-squared value. It the measure of how much a variable can explain the variance in target variable. Since our target variable is categorical Chi-square statistic would be the best way of assessing variable relationships. Reviewing the above plot, we can select variables for our data models and thus do feature selection. From the graph it is evident that nr.employment variable has the highest Chi-square statistic followed by other variables like cons.conf.idx, emp.var.rate, pdays, poutcome, euribor3m, month and so on.
 
 2.Variable Worth
+
 The plot above present a graph through we can easily understand which variable is most related to the target variable and helps to select the best predictor variables. It gives each of the variable’s worth in predicting the target variable.
 Here, we can see that consumer confidence index (cons_conf_idx) is serving as the best predictor and it is very likely that a customer’s spending activity and income stability accounts to predict whether the customer gets subscribed to a term deposit account or not. Further nr_employed followed by euribor3m, emp_var_rate, pdays, poutcome, month are determined as best predictors, in descending order.
 
