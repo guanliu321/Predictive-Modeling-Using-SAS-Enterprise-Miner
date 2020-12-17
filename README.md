@@ -199,3 +199,17 @@ In case of decision trees handling the missing values is not a problem since we 
 
 • Once we run the node, the values get imputed and we can see two additional columns in the data as shown below:
 For example, we can see that in train data 21857 values are replaced and the same happens in validation data which replaces 17816 values.
+
+For example, we can see that in train data 21857 values are replaced and the same happens in validation data which replaces 17816 values.
+In the above figure we can see that there are totally 3 columns: replaced column, imputed column and imputation indicator column. The missing values are replaced by value ‘6’. Once the values are imputed the original pdays column role becomes rejected.
+
+b. Transformation of variables
+
+After imputing the variables, we should not consider transforming some of our variables which does not look normal. Transforming the data before modelling always improves the response of model by stabilizing its variance, removing non-linearity and handle the data which is not normal. We can opt to transform one or more variables in our dataset.
+
+Here we are selecting two variables for transformation: campaign and previous since these interval variables does not seem to be normal when checked for skew and kurtosis.
+
+The common log transformation method is used to control the skewness of the variable. As a result, 2 new transformed variable columns are added and we can see that the common log transformation tries to normalise both the variables.
+Now our data is ready for building a regression model. We drag a regression model into the workspace and connect the impute node to it and directly run the model.
+
+• The default settings of regression node build a model where all variables are used to build the model and the results are as shown below. The significance level of accepting any model as significant is considered as 0.05.
