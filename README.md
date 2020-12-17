@@ -76,3 +76,9 @@ We have 10 nominal variables in our dataset and there are no missing categorical
 
 • y: In the given dataset, it is observed that the target response ‘y’ has around 89% of “yes” responses and around 11% of “no” responses. 
 
+Using the StatExplore node the following observations were done:
+Chi-Square Plot
+
+A Chi-square statistic gives us the relationship between each of the variables and the target variable. The Chi-square statistic is very similar to the co-efficient of determination, R-squared value. It the measure of how much a variable can explain the variance in target variable. Since our target variable is categorical Chi-square statistic would be the best way of assessing variable relationships. Reviewing the above plot, we can select variables for our data models and thus do feature selection. From the graph it is evident that nr.employment variable has the highest Chi-square statistic followed by other variables like cons.conf.idx, emp.var.rate, pdays, poutcome, euribor3m, month and so on.
+Variable Worth
+
