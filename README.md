@@ -217,6 +217,7 @@ Here we are selecting two variables for transformation: campaign and previous si
 
 The common log transformation method is used to control the skewness of the variable. As a result, 2 new transformed variable columns are added and we can see that the common log transformation tries to normalise both the variables.
 
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.53.41%20AM.png)
 
 Now our data is ready for building a regression model. We drag a regression model into the workspace and connect the impute node to it and directly run the model.
 
