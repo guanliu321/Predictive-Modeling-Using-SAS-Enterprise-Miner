@@ -223,11 +223,14 @@ Now our data is ready for building a regression model. We drag a regression mode
 
 • The default settings of regression node build a model where all variables are used to build the model and the results are as shown below. The significance level of accepting any model as significant is considered as 0.05.
 
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.53.41%20AM.png)
+
 From the above screenshot we can say that our regression model is statistically significant (<0.0001) and it is capable of explaining the target variable ‘y’.
 
 • Since we have used the default setting of regression the algorithm uses all variables to build the model and we can see from the results that not all variables are significant in explaining the target variable ‘y’.
 
 • Here comes the use of Stepwise model selection where the algorithm automatically selects the variables based on their Chisq value stepwise and runs the model. The results of this model are as shown below:
+
    The process uses 21 steps to select the best variables for the model with number of variables reduced to 11, capable of efficiently predicting the target variable ‘y’. The misclassification rate was found to be 0.0992 for both train and validation data.
    
 3. RANDOM FOREST
