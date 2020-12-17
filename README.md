@@ -53,9 +53,10 @@ We have 9 interval variables in the dataset. None of them have missing values, h
 3.1.2 NOMINAL VARIABLES
 
 We have 10 nominal variables in our dataset and there are no missing categorical values and thus no imputation is needed. A review of all the nominal variables plot reveals the following observations.
+
 • contact: The variable indicates the communication type of the campaign for a particular client. It has 2 possible values “cellular” and “telephone”. Around 63% of clients were contacted through “cellular” and around 37% of clients were contacted through “telephone”. The clients who were contacted through cell phone had more “yes” responses than who were contacted through telephone. 
 
-• day_of_week: The variable tells the last weekday when the client was contacted. The possible values are 5 weekdays from “monday” to “friday”. The figure 6 in appendix says that the variable did not vary much with respect to target variable ‘y’. It seems that most of the clients were contacted on “mondays” and “thursdays”.
+• day_of_week: The variable tells the last weekday when the client was contacted. The possible values are 5 weekdays from “monday” to “friday”. 
 
 • default: Indicates whether a client has a credit card provided by bank or not. The possible values are “yes”,”no” and “uknown”. 
 
