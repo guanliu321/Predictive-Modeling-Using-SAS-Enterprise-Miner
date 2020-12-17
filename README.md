@@ -317,7 +317,7 @@ The possible reason that Auto Neural Network and Neural Network were built as be
 A related study for this work was carried out from a Portugal research unit. In this paper they proposed the same approach of using data mining models for predicting the customers who get subscribed to the term deposit of Portuguese bank.
 When we compare our work with the paper following observations were made:
 
-8.conclusion
+8.CONCLUSION
 
 In this study, different predictive models have been built to predict the bank customers those who gets subscribed to the new product of the Portuguese bank, “term deposits”, so that the bank can target those customers during campaigning. The bank dataset we used contains 41188 observations with 20 input variables. We used 19 input variables for the data modelling rejecting the duration variable since it highly affects the outcome variable when customer is not at all contacted. Seven predictive models are built in this study namely Decision tree, Maximal decision tree, Logistic regression, Random forest, Support Vector Machines, Neural Networks and Auto-Neural Networks. The models were evaluated using two model assessment measures Area Under Curve (AUC) and misclassification rate. For both the metrics, Auto Neural Networks and Neural Networks was assessed as the best fits with AUC of 0.80 and misclassification rate of 0.0985.
   
