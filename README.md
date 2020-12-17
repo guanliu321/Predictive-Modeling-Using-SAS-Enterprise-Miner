@@ -262,7 +262,7 @@ In this neural network we have made a direct connection to between the input and
 The iteration plot explains the measurement of average squared error with respect to number of optimal iterations.
 
 
-![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Screen%20Shot%202020-12-18%20at%206.29.15%20AM.png)
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.55.02%20AM.png)
 
 
 
