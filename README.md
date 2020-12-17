@@ -248,5 +248,6 @@ The table in the left gives the variable importance indicating euribor3m, nr.emp
 4. SUPPORT VECTOR MACHINE (SVM)
 
 A support vector machine is a binary classifier algorithm where it separates the observations into two classes. There is a margin drawn in between the two observations, the more we can separate these two models by increasing the margin, we will have a better and more accurate model when applied to an unknown data. Since all data cannot be separated with a 1-D margin we use kernel functions where a higher-dimensional margin is placed between the observations. A selected kernel and its parameters accounts in how well a classification model is built.
+
 Here, in our SVM model we tried different kernel functions and have selected linear kernel with 2 polynomial degree as the best option to deal with.
   
