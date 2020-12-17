@@ -152,7 +152,7 @@ Since we want all ‘999’ to be replaced we will specify the Replacement upper
 A total of (21857+17816) 39673 values in pdays have been replaced as missing values(.)
 We can also see an added column in the dataset named Replacement: pdays which holds the replaced column values of pdays
 
-![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.47.31%20AM.png)
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.47.41%20AM.png)
 
 Now the data is ready for data modelling. In the next section, we shall start implementing different machine learning algorithms to build predictive models.
   
