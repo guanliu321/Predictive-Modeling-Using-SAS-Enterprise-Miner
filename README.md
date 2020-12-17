@@ -88,7 +88,7 @@ A Chi-square statistic gives us the relationship between each of the variables a
 The plot above present a graph through we can easily understand which variable is most related to the target variable and helps to select the best predictor variables. It gives each of the variable’s worth in predicting the target variable.
 Here, we can see that consumer confidence index (cons_conf_idx) is serving as the best predictor and it is very likely that a customer’s spending activity and income stability accounts to predict whether the customer gets subscribed to a term deposit account or not. Further nr_employed followed by euribor3m, emp_var_rate, pdays, poutcome, month are determined as best predictors, in descending order.
 
-3. Output
+3.Output
 
 The output window provides a complete summary of the data in the form of numbers. The output window includes information like the measurement levels of variables and corresponding frequencies, summary statistics for each of the variable types separately and mainly the Target variable statistics with respect to each of the variables present in the dataset.
 
