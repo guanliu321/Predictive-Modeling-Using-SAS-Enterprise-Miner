@@ -241,6 +241,8 @@ From the above screenshot we can say that our regression model is statistically 
 
 Random forest is classifier algorithm which uses a number of decision tress to build a best predict data model. The algorithm selects the variables depending on the variable importance calculated and several number of weak decision trees are created. As the number of tress increase the model becomes gradually efficient with decreasing error rate. Some of the interesting observations in the random forest model as are explained below:
 
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.54.36%20AM.png)
+
 The table in the left gives the variable importance indicating euribor3m, nr.employed, month as the variable with most importance and loan with least. Depending on this calculation the algorithm tries to build number of weak decision tree models. Also, the second graph indicates that there were 100 weak decision trees built and as number of trees increased the Misclassification error rate decreased trying to make the model to behave as the best fit. Until 20 trees the misclassification rate gets decreased and further the trend becomes stagnant and finally at 100th decision tree the misclassification rate is 0.0994 and 0.0998 for train and validation data respectively, which is a good measure comparatively.
 
 4. SUPPORT VECTOR MACHINE (SVM)
