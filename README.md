@@ -180,3 +180,20 @@ The maximal tree is not best decision tree to use, the reason is that specifying
 1b. Regular decision tree (Auto-pruned):
 
 In regular decision tree the subtree method is selected as Assessment, which means that the decision tree first creates a maximal tree and then prunes the same to get a final effective decision tree with reduced set of branches. Here, we know that the target outcome should be ‘1’ or ‘0’ and thus we select the assessment measure as Decision. This tries to optimise the branches that would decide to predict a ‘1’ or ‘0’ for target variable.
+
+As we can see from above built model, the original decision tree is trimmed to 44 leaf nodes. The leaf nodes have been decreased by 10 numbers which results in better performance when it is used for a new dataset. The misclassification rate is found to be 0.0986 and 0.099 for train and validation data respectively.
+
+2. REGRESSION
+
+Before doing regression, we have to consider that whether our data meets the criteria for being analysed using regression. The things we have to check about is missing values in the columns of data and the considering the transformation of variables which are not normal.
+
+a. Handling missing values
+
+In case of decision trees handling the missing values is not a problem since we have surrogate rules for rescue. This specification allows SAS enterprise miner to use upto the mentioned number of surrogate rules in each non-leaf node if the splitting rule depends on an input having missing values. But in regression, the case is that the algorithm automatically ignores the observations which contains 50% of missing values. Hence if we want to make use of all the data, we have to impute the missing values. Until now we have got missing values in only one variable i.e. pdays. In this study, these missing values are imputed with the median of the non-missing values of variable pdays.The missing value cut off is set to 97% since we have 96% missing.
+
+• Before regression, an impute node has been used in SAS enterprise miner to replace missing values. The default input method is selected as median and hence median of pdays i.e. ‘6’ will be imputed in place of all missing values. By default, the missing cut
+
+• Further we will be creating a new column with imputed values and use it as an input in the data modelling. For this we have to do personalise the settings for indicator variable with Type set as Unique and Role set to input. In addition, we will get a variable which indicates whether a value is imputed or not: ‘1’ for imputed and ‘0’ for not imputed, and this will also be an input variable. Both of those become inputs to be tested whether or not they affect the outcome variable.
+
+• Once we run the node, the values get imputed and we can see two additional columns in the data as shown below:
+For example, we can see that in train data 21857 values are replaced and the same happens in validation data which replaces 17816 values.
