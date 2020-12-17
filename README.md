@@ -140,3 +140,20 @@ As discussed earlier in Data analysis part, we observed that the variable pdays 
 • The replacement window of interval variables has been customised to add missing values as replacement for pdays=999 in properties panel and Default limit methods has been switched to none since we do not want to enforce the replacement and we will do it manually.
 
 • In replacement editor of interval variable, we specify the variable to be replaced and what values to be replaced.
+Since we want all ‘999’ to be replaced we will specify the Replacement upper limit as ‘998’ which replaces all values greater than ‘998’
+
+• Once we run the node, the output window gives the number of values replaced in both training and validation dataset.
+
+A total of (21857+17816) 39673 values in pdays have been replaced as missing values(.)
+
+We can also see an added column in the dataset named Replacement: pdays which holds the replaced column values of pdays
+
+  Now the data is ready for data modelling. In the next section, we shall start implementing different machine learning algorithms to build predictive models.
+  
+5. DATA MODELLING
+
+The aim of our project is to build predictive models for the bank dataset by using all relevant algorithms available in SAS enterprise miner and evaluate each of them to find the best model for predicting the target variable ‘y’. So here we are starting with training a decision tree model since this model does not need imputation to deal with missing values.
+
+1. DECISION TREE:
+
+Decision Tree is a supervised learning algorithm which is easily understood and interpreted among all classification algorithms. It is mostly used for classification problems but also for regression problems. When training a dataset to classify a variable, the decision tree makes
