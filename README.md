@@ -258,10 +258,19 @@ Here, in our SVM model we tried different kernel functions and have selected lin
 Neural Network is an algorithm which can build model having non-linear relationships between the predictor and target variables. Here the processing units called neurons are arranged in layers and we will be having 3 layers input, hidden and an output layer. For neural network models it is better if we do variable selection since a large number of inputs enforces more error rate into the neural network model. Hence, we will be using a variable selection node, here the variables which have low Chi-square value are rejected so that we will be left with less number and effective input variables. As a result, a reduced set of 11 variables are fed to the neural network.
 
 In this neural network we have made a direct connection to between the input and output layer in addition to the connection of hidden and output layers. The number of hidden layers here are selected as 6 with an estimation of number of layers = number of inputs/2.
+
 The iteration plot explains the measurement of average squared error with respect to number of optimal iterations.
+
+
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Screen%20Shot%202020-12-18%20at%206.29.15%20AM.png)
+
 
 
 6. AUTO-NEURAL NETWORK
 
 In auto-neural network, instead of setting the number of hidden layers manually the algorithm calculates the best number of hidden layers to the model. The algorithm performs number of iterations adding the hidden layers one-by-one by to get the best model fit. For this we have to mention the algorithm that number of hidden layers to be incremented for each iteration as ‘1’ and we will de activate the direct connection between input and output layer. Below is the result of auto neural network that we have built, here we are using the same input from variable selection node as in neural network model.
+
+
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Screen%20Shot%202020-12-18%20at%206.29.15%20AM.png)
+
   
