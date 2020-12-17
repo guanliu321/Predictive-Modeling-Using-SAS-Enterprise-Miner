@@ -107,7 +107,7 @@ Following are the observations made for the current BANK dataset, from the outpu
 •Target variable relationship with other variables
 
 
-![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.45.21%20AM.png)
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.46.47%20AM.png)
 
 The table provides a brief of how much each of the variables can account in
 variable ‘y’. The column Variable Worth contains the log worth values of variables corresponding to the target variable. Higher the value more the variable can explain the response the variable. The plot in the previous section also explains the same numeric in the form of graph.
