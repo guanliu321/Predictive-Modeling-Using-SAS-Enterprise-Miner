@@ -271,6 +271,6 @@ The iteration plot explains the measurement of average squared error with respec
 In auto-neural network, instead of setting the number of hidden layers manually the algorithm calculates the best number of hidden layers to the model. The algorithm performs number of iterations adding the hidden layers one-by-one by to get the best model fit. For this we have to mention the algorithm that number of hidden layers to be incremented for each iteration as ‘1’ and we will de activate the direct connection between input and output layer. Below is the result of auto neural network that we have built, here we are using the same input from variable selection node as in neural network model.
 
 
-![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Screen%20Shot%202020-12-18%20at%206.29.15%20AM.png)
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.55.12%20AM.png)
 
   
