@@ -282,6 +282,8 @@ When we run a data model, we will get different number of statistics which expla
 
 The assessment of data model here depends on the concept of confusion matrix. Below is the explanation for confusion matrix. 
 
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.55.25%20AM.png)
+
 • TRUE POSITIVE: It represents correct prediction of actual value as positive by the model.
 
 • TRUE NEGATIVE: It represents correct prediction of actual value as negative.
