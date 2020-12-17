@@ -148,13 +148,12 @@ Since we want all ‘999’ to be replaced we will specify the Replacement upper
 A total of (21857+17816) 39673 values in pdays have been replaced as missing values(.)
 
 We can also see an added column in the dataset named Replacement: pdays which holds the replaced column values of pdays
-
-  Now the data is ready for data modelling. In the next section, we shall start implementing different machine learning algorithms to build predictive models.
+Now the data is ready for data modelling. In the next section, we shall start implementing different machine learning algorithms to build predictive models.
   
-5. DATA MODELLING
+5.DATA MODELLING
 
 The aim of our project is to build predictive models for the bank dataset by using all relevant algorithms available in SAS enterprise miner and evaluate each of them to find the best model for predicting the target variable ‘y’. So here we are starting with training a decision tree model since this model does not need imputation to deal with missing values.
 
-1. DECISION TREE:
+1.DECISION TREE:
 
 Decision Tree is a supervised learning algorithm which is easily understood and interpreted among all classification algorithms. It is mostly used for classification problems but also for regression problems. When training a dataset to classify a variable, the decision tree makes
