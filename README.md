@@ -129,6 +129,7 @@ The raw bank dataset is now set to divide into train data and validation dataset
 • The data partition method used here is default which selects to stratify the data on target variable. Since we have 89% of “no” responses and 11% of “yes” responses in target variable, Stratifying ensures that both responses “no” and “yes” are well- represented in data partitions.
 
 • Once we run the node, the data gets partitioned with proportions as mentioned above and we can see the same in results. In addition, we can also see the proportion of each variable which got partitioned into train and validate data.
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.47.04%20AM.png)
 
 4.1.2 Data Replacement
 
