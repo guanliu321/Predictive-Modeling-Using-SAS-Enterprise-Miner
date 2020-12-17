@@ -240,4 +240,11 @@ From the above screenshot we can say that our regression model is statistically 
 3. RANDOM FOREST
 
 Random forest is classifier algorithm which uses a number of decision tress to build a best predict data model. The algorithm selects the variables depending on the variable importance calculated and several number of weak decision trees are created. As the number of tress increase the model becomes gradually efficient with decreasing error rate. Some of the interesting observations in the random forest model as are explained below:
+
+The table in the left gives the variable importance indicating euribor3m, nr.employed, month as the variable with most importance and loan with least. Depending on this calculation the algorithm tries to build number of weak decision tree models. Also, the second graph indicates that there were 100 weak decision trees built and as number of trees increased the Misclassification error rate decreased trying to make the model to behave as the best fit. Until 20 trees the misclassification rate gets decreased and further the trend becomes stagnant and finally at 100th decision tree the misclassification rate is 0.0994 and 0.0998 for train and validation data respectively, which is a good measure comparatively.
+
+4. SUPPORT VECTOR MACHINE (SVM)
+
+A support vector machine is a binary classifier algorithm where it separates the observations into two classes. There is a margin drawn in between the two observations, the more we can separate these two models by increasing the margin, we will have a better and more accurate model when applied to an unknown data. Since all data cannot be separated with a 1-D margin we use kernel functions where a higher-dimensional margin is placed between the observations. A selected kernel and its parameters accounts in how well a classification model is built.
+Here, in our SVM model we tried different kernel functions and have selected linear kernel with 2 polynomial degree as the best option to deal with.
   
