@@ -222,3 +222,15 @@ The common log transformation method is used to control the skewness of the vari
 Now our data is ready for building a regression model. We drag a regression model into the workspace and connect the impute node to it and directly run the model.
 
 • The default settings of regression node build a model where all variables are used to build the model and the results are as shown below. The significance level of accepting any model as significant is considered as 0.05.
+
+From the above screenshot we can say that our regression model is statistically significant (<0.0001) and it is capable of explaining the target variable ‘y’.
+
+• Since we have used the default setting of regression the algorithm uses all variables to build the model and we can see from the results that not all variables are significant in explaining the target variable ‘y’.
+
+• Here comes the use of Stepwise model selection where the algorithm automatically selects the variables based on their Chisq value stepwise and runs the model. The results of this model are as shown below:
+   The process uses 21 steps to select the best variables for the model with number of variables reduced to 11, capable of efficiently predicting the target variable ‘y’. The misclassification rate was found to be 0.0992 for both train and validation data.
+   
+3. RANDOM FOREST
+
+Random forest is classifier algorithm which uses a number of decision tress to build a best predict data model. The algorithm selects the variables depending on the variable importance calculated and several number of weak decision trees are created. As the number of tress increase the model becomes gradually efficient with decreasing error rate. Some of the interesting observations in the random forest model as are explained below:
+  
