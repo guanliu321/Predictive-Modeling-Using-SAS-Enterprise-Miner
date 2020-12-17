@@ -115,3 +115,27 @@ variable ‘y’. The column Variable Worth contains the log worth values of var
 The column Variable Importance ranks each of the variable for predicting the Target variable, depending on the variable worth values.
 
 From the table, we can see that variable “cons_conf_idx” can highly contribute than any other variables, to predict the response variable and variable “day_of_week” contributes the least.
+
+4. DATA ANALYSIS AND PREPARATION
+
+4.1.1 Data Partition
+
+The raw bank dataset is now set to divide into train data and validation dataset. Separating data into train, test and validation data is very important when we build data models and very useful during the evaluation of data models. Typically, when we separate a data, a larger partition is used for training the model and smaller partition is used for validating/testing the model and later we check the built model with validation data to make sure there is no existence of overfitting of model. In our project, we are using only train and validation data partitions since testing is not included here.
+
+• To carry out data partition in SAS enterprise Miner, we have a node named Data Partition in Sample section of SEMMA tool bar.
+
+• In the properties panel of Data Partition, data allocations tab has been set to 55% of training data and 45% of validation data.
+
+• The data partition method used here is default which selects to stratify the data on target variable. Since we have 89% of “no” responses and 11% of “yes” responses in target variable, Stratifying ensures that both responses “no” and “yes” are well- represented in data partitions.
+
+• Once we run the node, the data gets partitioned with proportions as mentioned above and we can see the same in results. In addition, we can also see the proportion of each variable which got partitioned into train and validate data.
+
+4.1.2 Data Replacement
+
+As discussed earlier in Data analysis part, we observed that the variable pdays contains a value ‘999’ which needs to be replaced. Here, we are replacing these values with missing values(.) in both training and test data sets.
+
+• For data replacement in SAS Miner, we have a node called Replacement in the Modify section of SEMMA tool bar. The partitioned data node is connected to replacement node.
+
+• The replacement window of interval variables has been customised to add missing values as replacement for pdays=999 in properties panel and Default limit methods has been switched to none since we do not want to enforce the replacement and we will do it manually.
+
+• In replacement editor of interval variable, we specify the variable to be replaced and what values to be replaced.
