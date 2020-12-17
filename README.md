@@ -233,6 +233,8 @@ From the above screenshot we can say that our regression model is statistically 
 
 • Here comes the use of Stepwise model selection where the algorithm automatically selects the variables based on their Chisq value stepwise and runs the model. The results of this model are as shown below:
 
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.54.18%20AM.png)
+
    The process uses 21 steps to select the best variables for the model with number of variables reduced to 11, capable of efficiently predicting the target variable ‘y’. The misclassification rate was found to be 0.0992 for both train and validation data.
    
 3. RANDOM FOREST
