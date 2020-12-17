@@ -100,3 +100,10 @@ By examining this summary, we can get to know about what kind of data we have an
 Following are the observations made for the current BANK dataset, from the output window:
 
 •From the dataset, 9 interval variables and 10 nominal variables were found.
+
+The table provides a brief of how much each of the variables can account in
+variable ‘y’. The column Variable Worth contains the log worth values of variables corresponding to the target variable. Higher the value more the variable can explain the response the variable. The plot in the previous section also explains the same numeric in the form of graph.
+
+The column Variable Importance ranks each of the variable for predicting the Target variable, depending on the variable worth values.
+
+From the table, we can see that variable “cons_conf_idx” can highly contribute than any other variables, to predict the response variable and variable “day_of_week” contributes the least.
