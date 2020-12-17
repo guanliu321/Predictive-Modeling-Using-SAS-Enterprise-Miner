@@ -259,7 +259,7 @@ Neural Network is an algorithm which can build model having non-linear relations
 
 In this neural network we have made a direct connection to between the input and output layer in addition to the connection of hidden and output layers. The number of hidden layers here are selected as 6 with an estimation of number of layers = number of inputs/2.
 The iteration plot explains the measurement of average squared error with respect to number of optimal iterations.
-The iteration plot shows that even after doing variable selection, there in an increase in average square error rate from train data to validation data. The misclassification rate is also recorded as 0.098 and 0.1 for train and validation data respectively, which does not show much difference.
+
 
 6. AUTO-NEURAL NETWORK
 
