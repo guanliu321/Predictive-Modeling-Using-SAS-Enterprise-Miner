@@ -200,7 +200,13 @@ In case of decision trees handling the missing values is not a problem since we 
 • Once we run the node, the values get imputed and we can see two additional columns in the data as shown below:
 For example, we can see that in train data 21857 values are replaced and the same happens in validation data which replaces 17816 values.
 
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.53.22%20AM.png)
+
 For example, we can see that in train data 21857 values are replaced and the same happens in validation data which replaces 17816 values.
+
+
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.53.22%20AM.png)
+
 In the above figure we can see that there are totally 3 columns: replaced column, imputed column and imputation indicator column. The missing values are replaced by value ‘6’. Once the values are imputed the original pdays column role becomes rejected.
 
 b. Transformation of variables
