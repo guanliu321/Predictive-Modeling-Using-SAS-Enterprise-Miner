@@ -312,9 +312,12 @@ The measures of misclassification rate and ROC Index for each of the models buil
 As per the observations above, we can say that among all the predictive models Auto Neural Network has got the least misclassification and SVM has got highest misclassification error rate. When it comes to ROC, Neural Network has got the highest Area Under Curve and SVM has got the lowest Area Under Curve. Therefore, after reviewing the results we can say that Auto Neural Networks and Neural Networks as the best predicting data models for our Portuguese bank dataset to predict the customers who will get subscribed to the bank’s term deposit service.
 The possible reason that Auto Neural Network and Neural Network were built as best models is the kind of input variables fed into the data models. Unlike from the inputs for other data models, here we have used variable selection method to cut down all the variables which do not potentially have the capability of explaining the variation in target variable and the inputs were transformed to yield the normalised form of the variables which gets added to the efficiency of model. However, when it comes to neural network models, it becomes a black box and interpreting the output of a neural network is nearly not possible. But still there are many approaches from which we can interpret the working and an example of one such approach is convolutional neural networks.
 
-COMPARISION OF RELATED WORK
+7.COMPARISION OF RELATED WORK
 
 A related study for this work was carried out from a Portugal research unit. In this paper they proposed the same approach of using data mining models for predicting the customers who get subscribed to the term deposit of Portuguese bank.
 When we compare our work with the paper following observations were made:
 
+8.conclusion
+
+In this study, different predictive models have been built to predict the bank customers those who gets subscribed to the new product of the Portuguese bank, “term deposits”, so that the bank can target those customers during campaigning. The bank dataset we used contains 41188 observations with 20 input variables. We used 19 input variables for the data modelling rejecting the duration variable since it highly affects the outcome variable when customer is not at all contacted. Seven predictive models are built in this study namely Decision tree, Maximal decision tree, Logistic regression, Random forest, Support Vector Machines, Neural Networks and Auto-Neural Networks. The models were evaluated using two model assessment measures Area Under Curve (AUC) and misclassification rate. For both the metrics, Auto Neural Networks and Neural Networks was assessed as the best fits with AUC of 0.80 and misclassification rate of 0.0985.
   
