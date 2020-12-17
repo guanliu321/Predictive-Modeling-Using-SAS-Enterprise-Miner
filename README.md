@@ -223,7 +223,7 @@ Now our data is ready for building a regression model. We drag a regression mode
 
 • The default settings of regression node build a model where all variables are used to build the model and the results are as shown below. The significance level of accepting any model as significant is considered as 0.05.
 
-![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.53.41%20AM.png)
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.53.52%20AM.png)
 
 From the above screenshot we can say that our regression model is statistically significant (<0.0001) and it is capable of explaining the target variable ‘y’.
 
