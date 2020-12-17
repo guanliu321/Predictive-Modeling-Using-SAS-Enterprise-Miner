@@ -27,14 +27,14 @@ A statistical examination of data gives us a clear picture about the dataset in 
  
 3.1.1 INTERVAL VARIABLES
 
-We have 9 interval variables in the dataset. None of them have missing values, hence no imputation of values is required. The histograms and bar plots by target variable ‘y’ for all variables is provided in the Appendix section from Figure 1 to Figure 19. All the interval variables of bank dataset are as explained below:
+We have 9 interval variables in the dataset. None of them have missing values, hence no imputation of values is required. All the interval variables of bank dataset are as explained below:
 
 • age: It indicates age of the client. It seems that age does not have much impact on the target variable ’y’ since the variance between the two responses of ‘y’ for age is very less.
 
 
 • Campaign: It indicates number of contacts performed for this campaign for a client. The value ranges from minimum of 1 to maximum of 56. 
 
-• pdays: It indicates the number of days after the client was contacted for the last time from previous campaign. The values range from 0 to 27 days and also it has value ‘999’ which indicates that the customer was not contacted at all. Around 96% of the examples say that the client was not contacted. This data makes no sense to training the model since we are required to train a model with data where the customer was contacted and corresponding observations are taken into consideration. Hence, going further we have to either ignore the observations where pdays=999 or we can replace them with mean/median of variable. Let us select the second option for this study where pdays=999 are replaced and imputed with median of pdays = 6. Figure 17 in appendix represents the plots for this variable.
+• pdays: It indicates the number of days after the client was contacted for the last time from previous campaign. The values range from 0 to 27 days and also it has value ‘999’ which indicates that the customer was not contacted at all. Around 96% of the examples say that the client was not contacted. This data makes no sense to training the model since we are required to train a model with data where the customer was contacted and corresponding observations are taken into consideration. Hence, going further we have to either ignore the observations where pdays=999 or we can replace them with mean/median of variable. Let us select the second option for this study where pdays=999 are replaced and imputed with median of pdays = 6.
 
 • cons.conf.idx: It is a monthly indicator which determines consumer confidence index. The value ranges from minimum of -50.8 to -26.9. It explains about the country’s current and future economic situation each month.
 
