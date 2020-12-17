@@ -181,6 +181,8 @@ The maximal tree is not best decision tree to use, the reason is that specifying
 
 In regular decision tree the subtree method is selected as Assessment, which means that the decision tree first creates a maximal tree and then prunes the same to get a final effective decision tree with reduced set of branches. Here, we know that the target outcome should be ‘1’ or ‘0’ and thus we select the assessment measure as Decision. This tries to optimise the branches that would decide to predict a ‘1’ or ‘0’ for target variable.
 
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.53.05%20AM.png)
+
 As we can see from above built model, the original decision tree is trimmed to 44 leaf nodes. The leaf nodes have been decreased by 10 numbers which results in better performance when it is used for a new dataset. The misclassification rate is found to be 0.0986 and 0.099 for train and validation data respectively.
 
 2. REGRESSION
