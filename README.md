@@ -102,7 +102,7 @@ Following are the observations made for the current BANK dataset, from the outpu
 •From the dataset, 9 interval variables and 10 nominal variables were found.
 
 
-![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.45.21%20AM.png)
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.45.38%20AM.png)
 
 •Target variable relationship with other variables
 
