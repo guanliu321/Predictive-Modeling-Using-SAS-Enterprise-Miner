@@ -141,6 +141,8 @@ As discussed earlier in Data analysis part, we observed that the variable pdays 
 
 • In replacement editor of interval variable, we specify the variable to be replaced and what values to be replaced.
 
+![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.47.19%20AM.png)
+
 Since we want all ‘999’ to be replaced we will specify the Replacement upper limit as ‘998’ which replaces all values greater than ‘998’
 
 • Once we run the node, the output window gives the number of values replaced in both training and validation dataset.
