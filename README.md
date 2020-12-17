@@ -91,9 +91,9 @@ Here, we can see that consumer confidence index (cons_conf_idx) is serving as th
 3. Output
 
 The output window provides a complete summary of the data in the form of numbers. The output window includes information like the measurement levels of variables and corresponding frequencies, summary statistics for each of the variable types separately and mainly the Target variable statistics with respect to each of the variables present in the dataset.
+
 By examining this summary, we can get to know about what kind of data we have and if there are any missing values in the dataset, we can find them and later work on them to be replaced for better analysis.
+
 Following are the observations made for the current BANK dataset, from the output window:
-•
-ROLE
-OUTPUT
-From the dataset, 9 interval variables and 10 nominal variables were found.
+
+•From the dataset, 9 interval variables and 10 nominal variables were found.
