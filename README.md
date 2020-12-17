@@ -162,4 +162,19 @@ The aim of our project is to build predictive models for the bank dataset by usi
 
 1.DECISION TREE:
 
-Decision Tree is a supervised learning algorithm which is easily understood and interpreted among all classification algorithms. It is mostly used for classification problems but also for regression problems. When training a dataset to classify a variable, the decision tree makes
+Decision Tree is a supervised learning algorithm which is easily understood and interpreted among all classification algorithms. It is mostly used for classification problems but also for regression problems. When training a dataset to classify a variable, the decision tree makes smaller subsets of data based on certain node rules until the target variable falls under one category. The selection of variables to be splitted is calculated by the system based on parameters like maximum information gain.
+
+Here in this project we are building 2 models using decision tree, one is the interactive or maximal decision tree model and another one is an auto-pruned decision tree model. To manage the missing values in decision trees, we have customised the algorithm to use up to 4 surrogate rules when it encounters an input value with missing observations.
+
+1a. Maximal Decision tree:
+
+The Maximal decision tree works as an interactive decision tree where a user can select the variables to be splitted at each node of the tree. The basic idea of maximal tree is the decision tree is splitted upto maximum extent using all of the variables resulting in a massive decision tree. The algorithm is Chi-square driven and the selection of variables at nodes depend on the Chi-square driven statistic value -log(p) of the variables. Since the model is interactive, we can see which variables have the best Chi-square statistic and also the best point at which the node gets splitted to. Each time a variable is selected and node is created, for the next node the variables -log(p) decreases which explains that the current variable becomes the leaf node for the first selected variable.
+In SAS enterprise we have got number of algorithms to use in which we can choose Decision tree for now. The maximal decision tree is created by using the Train node option which splits the decision tree to maximum number of branches. Below is the maximal tree created.
+
+ As we can see, the tree contains a number of branches and leaf nodes. The tree in total contains 54 leaf nodes. The misclassification rates for the model are 0.0972 and 0.0991 respectively for train and validate data.
+ 
+The maximal tree is not best decision tree to use, the reason is that specifying too many splits in the decision tree results in overfitting of the data model to the current dataset which should not happen. If we happen to select a smaller number of variables then we will get a higher accurate predictive data model when it is exposed to an unknown dataset. Hence, the decision tree needs to be pruned and it will be done in our next model.
+
+1b. Regular decision tree (Auto-pruned):
+
+In regular decision tree the subtree method is selected as Assessment, which means that the decision tree first creates a maximal tree and then prunes the same to get a final effective decision tree with reduced set of branches. Here, we know that the target outcome should be ‘1’ or ‘0’ and thus we select the assessment measure as Decision. This tries to optimise the branches that would decide to predict a ‘1’ or ‘0’ for target variable.
