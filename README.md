@@ -140,6 +140,7 @@ As discussed earlier in Data analysis part, we observed that the variable pdays 
 • The replacement window of interval variables has been customised to add missing values as replacement for pdays=999 in properties panel and Default limit methods has been switched to none since we do not want to enforce the replacement and we will do it manually.
 
 • In replacement editor of interval variable, we specify the variable to be replaced and what values to be replaced.
+
 Since we want all ‘999’ to be replaced we will specify the Replacement upper limit as ‘998’ which replaces all values greater than ‘998’
 
 • Once we run the node, the output window gives the number of values replaced in both training and validation dataset.
