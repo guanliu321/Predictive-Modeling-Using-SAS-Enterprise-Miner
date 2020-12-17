@@ -304,6 +304,7 @@ Characteristic. We consider 2 terminologies here: Sensitivity and Specificity.
 • Specificity: It detects how often a model correctly predicts the actual value as negative.
 
 Therefore, ROC can be explained as a graph of Sensitivity in y-axis and 1-Specificity in x-axis. Basically, ROC curve is a plot between True positives and false positives of a data model. Area Under ROC Curve indicates that as the ROC curve gets pulled towards ‘1’ in y-axis (AUC of ‘1’ makes an ideal model), the area under curve increases and means that the model is capable of predicting more True Positives than false positives. As a result, the accuracy of predicting model also increases.
+
 The measures of misclassification rate and ROC Index for each of the models built are as tabulated below and figure (a) below represent a visual representation of ROC Index for both train and validation data.
 
 As per the observations above, we can say that among all the predictive models Auto Neural Network has got the least misclassification and SVM has got highest misclassification error rate. When it comes to ROC, Neural Network has got the highest Area Under Curve and SVM has got the lowest Area Under Curve. Therefore, after reviewing the results we can say that Auto Neural Networks and Neural Networks as the best predicting data models for our Portuguese bank dataset to predict the customers who will get subscribed to the bank’s term deposit service.
