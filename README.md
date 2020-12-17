@@ -273,4 +273,35 @@ In auto-neural network, instead of setting the number of hidden layers manually 
 
 ![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.55.12%20AM.png)
 
+6. MODEL COMPARISION
+
+Each of the data models which are built in previous section are evaluated to check which model performs the best in explaining the target variable ‘y’ and that becomes the best data model for predicting the target variable.
+When we run a data model, we will get different number of statistics which explains the fitness and usefulness of each model. Here we are using two such parameters to assess the best predicting model for our data set, namely Misclassification rate and ROC index/Area Under Curve (AUC).
+
+➢ Misclassification rate:
+
+The assessment of data model here depends on the concept of confusion matrix. Below is the explanation for confusion matrix. 
+
+• TRUE POSITIVE: It represents correct prediction of actual value as positive by the model.
+
+• TRUE NEGATIVE: It represents correct prediction of actual value as negative.
+
+• FALSE POSITIVE: It represents incorrect prediction of actual value as positive.
+
+• FALSE NEGATIVE: It represents incorrect prediction of actual value as negative.
+
+From the confusion matrix, classification error= (FP+FN) / (TP+TN+FP+FN). This is called as Misclassification error rate which indicates the overall incorrectness of the classifier model.
+
+The table 1 in appendix shows misclassification rate for each of the built models. It is always good to have low values of mis classification error rate.
+
+➢ ROC (Receiver Operating Characteristic) Index / AUC (Area Under Curve) From above knowledge of confusion matrix, we draw a graph of Receiver Operating
+Characteristic. We consider 2 terminologies here: Sensitivity and Specificity.
+
+• Sensitivity: It detects how often a model correctly predicts the actual value as positive.
+
+• Specificity: It detects how often a model correctly predicts the actual value as negative.
+
+Therefore, ROC can be explained as a graph of Sensitivity in y-axis and 1-Specificity in x-axis. Basically, ROC curve is a plot between True positives and false positives of a data model. Area Under ROC Curve indicates that as the ROC curve gets pulled towards ‘1’ in y-axis (AUC of ‘1’ makes an ideal model), the area under curve increases and means that the model is capable of predicting more True Positives than false positives. As a result, the accuracy of predicting model also increases.
+The measures of misclassification rate and ROC Index for each of the models built are as tabulated below and figure (a) below represent a visual representation of ROC Index for both train and validation data.
+
   
