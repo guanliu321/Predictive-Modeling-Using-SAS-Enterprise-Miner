@@ -76,8 +76,8 @@ We have 10 nominal variables in our dataset and there are no missing categorical
 
 • y: In the given dataset, it is observed that the target response ‘y’ has around 89% of “yes” responses and around 11% of “no” responses. 
 
-1 Using the StatExplore node the following observations were done:
-Chi-Square Plot
+Using the StatExplore node the following observations were done:
+1.Chi-Square Plot
 
 ![alt text](https://github.com/guanliu321/Predictive-Modeling-Using-SAS-Enterprise-Miner/blob/main/Figure/Screen%20Shot%202020-12-18%20at%204.44.57%20AM.png)
 
